@@ -1,5 +1,6 @@
 package com.wipro.SpringBootLearn;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -9,6 +10,8 @@ public class Student {
 	
     private int rno;
     private String name;
+    @Autowired
+    private Address add;
 
     public Student()
     {
@@ -39,7 +42,7 @@ public class Student {
     public void Display()
     {
         System.out.println("Rno: "+ this.rno + " Name: " + this.name);
-
+        System.out.println("The Address is :" + add);
         //System.out.println("test");
     }
     

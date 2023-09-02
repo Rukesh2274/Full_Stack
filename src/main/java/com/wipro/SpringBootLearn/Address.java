@@ -1,9 +1,13 @@
 package com.wipro.SpringBootLearn;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+
 public class Address {
+	
+	
 
 	private String city;
     private String state;
